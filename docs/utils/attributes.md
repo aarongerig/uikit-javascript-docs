@@ -106,11 +106,13 @@ UIkit.util.filterAttr(element, 'class', new RegExp(regexStr, 'g'), 'uk-position-
 
 **HTML**
 ```html
-<p data-artist="Queen">Bohemian Rhapsody</p>
+<p id="sample" data-artist="Queen">Bohemian Rhapsody</p>
 ```
 
 **Javascript**
 ```javascript
+var element = document.getElementById('sample');
+
 // Get value of data-attribute
 var artist = UIkit.util.data(element, 'artist');
 console.log(artist);
