@@ -2,10 +2,12 @@
 
 ### `attr(element, name, value)`
 
+**HTML**
 ```html
 <input id="thanks">
 ```
 
+**Javascript**
 ```javascript
 var element = document.getElementById('thanks');
 
