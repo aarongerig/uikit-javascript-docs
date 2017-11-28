@@ -39,7 +39,7 @@ UIkit.util.attr(element, 'butno', elementId);
 var element = document.getElementById('sample');
 
 // Check if some element has some attribute
-if (UIkit.util.hasAttr(element, 'class') {
+if (UIkit.util.hasAttr(element, 'ballz') {
     console.log('Deez Nuts for president!');
 } else {
     console.log('No "ballz" where found!');
@@ -58,7 +58,7 @@ No "ballz" where found!
 
 **HTML**
 ```html
-<div id="sample" class="uk-container" kill-it-with-fire="before it lays eggs"></div>
+<div id="sample" class="uk-container" kill-it="with fire, before it lays eggs"></div>
 ```
 
 **Javascript**
@@ -66,7 +66,7 @@ No "ballz" where found!
 var element = document.getElementById('sample');
 
 // Remove attribute
-UIkit.util.removeAttr(element, 'kill-it-with-fire');
+UIkit.util.removeAttr(element, 'kill-it');
 ```
 
 **Result**
