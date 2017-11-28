@@ -26,10 +26,13 @@ UIkit.util.attr(element, 'butno', elementId);
 
 
 ### `hasAttr(element, name)`
+
+**HTML**
 ```html
 <div id="sample" class="uk-container"></div>
 ```
 
+**Javascript**
 ```javascript
 var element = document.getElementById('sample');
 
@@ -50,10 +53,13 @@ No "ballz" where found!
 
 
 ### `removeAttr(element, name)`
+
+**HTML**
 ```html
 <div id="sample" class="uk-container" kill-it-with-fire="before it lays eggs"></div>
 ```
 
+**Javascript**
 ```javascript
 var element = document.getElementById('sample');
 
@@ -70,10 +76,13 @@ UIkit.util.removeAttr(element, 'kill-it-with-fire');
 
 
 ### `filterAttr(element, attribute, pattern, replacement)`
+
+**HTML**
 ```html
 <div id="sample" class="uk-position-top"></div>
 ```
 
+**Javascript**
 ```javascript
 var element = document.getElementById('sample');
 
@@ -93,10 +102,12 @@ UIkit.util.filterAttr(element, 'class', new RegExp(regexStr, 'g'), 'uk-position-
 
 ### `data(element, attribute)`
 
+**HTML**
 ```html
 <p data-artist="Queen">Bohemian Rhapsody</p>
 ```
 
+**Javascript**
 ```javascript
 // Get value of data-attribute
 var artist = UIkit.util.data(element, 'artist');
