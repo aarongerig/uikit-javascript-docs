@@ -9,6 +9,6 @@ on your website, you can access its numerous functions under the `UIkit` namespa
 
 ---
 
-[![Built with Love](http://forthebadge.com/images/badges/built-with-love.svg)](Built with Love)
-[![Powered by Electricity](http://forthebadge.com/images/badges/powered-by-electricity.svg)](Powered by Electricity)
-[![Gluten Free](http://forthebadge.com/images/badges/gluten-free.svg)](Gluten Free)
+![Built with Love](http://forthebadge.com/images/badges/built-with-love.svg "Built with Love")
+![Powered by Electricity](http://forthebadge.com/images/badges/powered-by-electricity.svg "Powered by Electricity")
+![Gluten Free](http://forthebadge.com/images/badges/gluten-free.svg "Gluten Free")
