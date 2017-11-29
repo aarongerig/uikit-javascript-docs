@@ -4,7 +4,7 @@ but see for yourself...
 
 ### Chapters
 * [Attributes](utils/attributes.md)
-* Classes (WIP)
+* [Classes](utils/classes.md)
 * DOM (Document Object Model) (WIP)
 * Environments (WIP)
 * Events (WIP)

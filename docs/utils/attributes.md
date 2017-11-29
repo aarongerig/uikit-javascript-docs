@@ -39,16 +39,16 @@ UIkit.util.attr(element, 'butno', elementId);
 var element = document.getElementById('sample');
 
 // Check if some element has some attribute
-if (UIkit.util.hasAttr(element, 'ballz') {
-    console.log('Deez Nuts for president!');
+if (UIkit.util.hasAttr(element, 'long-gone')) {
+    console.log('Element has attribute!');
 } else {
-    console.log('No "ballz" where found!');
+    console.log('Attribute was not found!');
 }
 ```
 
 **Result**
 ```log
-No "ballz" where found!
+Attribute was not found!
 ```
 ---
 
@@ -58,7 +58,7 @@ No "ballz" where found!
 
 **HTML**
 ```html
-<div id="sample" class="uk-container" kill-it="with fire, before it lays eggs"></div>
+<div id="sample" class="uk-container" invalid="non-sense"></div>
 ```
 
 **Javascript**
@@ -66,7 +66,7 @@ No "ballz" where found!
 var element = document.getElementById('sample');
 
 // Remove attribute
-UIkit.util.removeAttr(element, 'kill-it');
+UIkit.util.removeAttr(element, 'invalid');
 ```
 
 **Result**
@@ -89,7 +89,6 @@ UIkit.util.removeAttr(element, 'kill-it');
 var element = document.getElementById('sample');
 
 // Filter an attribute's value
-// Here we exchange the class uk-position-top with uk-position-bottom.
 var regexStr = '(^|\\s)uk-position-top(?!\\S)';
 UIkit.util.filterAttr(element, 'class', new RegExp(regexStr, 'g'), 'uk-position-bottom');
 ```
