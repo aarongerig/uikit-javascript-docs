@@ -65,7 +65,7 @@ var element = document.getElementById('sample');
 
 // Remove classes based on a regular expression
 var regexStr = 'uk-position-(top|bottom|left|right)(-[a-z]+)?';
-UIkit.util.removeAttr(element, regexStr);
+UIkit.util.removeClass(element, regexStr);
 ```
 
 **Result**
@@ -130,6 +130,8 @@ Element has the class!
 > **Optional force parameter:** As the last argument of this function, you can pass a Boolean type (true or false).
   It turns the toggle into a one way-only operation. If set to false, the class will only be removed but not added again
   and vice versa. Further reading [MDN: classList](https://developer.mozilla.org/en/docs/Web/API/Element/classList)
+  
+
 
 **HTML**
 ```html
