@@ -9,17 +9,17 @@
 
 **Javascript**
 ```javascript
-// Check if direction mode is set to RTL
+// Check if base direction of text is set to RTL
 if (UIkit.util.isRtl) {
-    console.log('Direction mode is set to RTL');
+    console.log('Direction is set to RTL');
 } else {
-    console.log('Direction mode is set to LTR');
+    console.log('Direction is set to LTR');
 }
 ```
 
 **Result**
 ```log
-Direction mode is set to RTL
+Direction is set to RTL
 ```
 ---
 
@@ -68,33 +68,31 @@ DOM is now safely manipulable.
 
 **HTML**
 ```html
-<div id="page-loader" class="uk-position-fixed uk-position-cover uk-background-primary">
-    <div class="uk-position-center" data-uk-spinner="ratio: 1.5"></div>
-</div>
+<div id="sample" class="uk-card uk-card-primary uk-card-body">Primary Card</div>
 ```
 
 **Javascript**
 ```javascript
-var element = document.getElementById('page-loader');
+var element = document.getElementById('sample');
 
 // Let's you transition any CSS property to a certain value
-UIkit.util.transition(element, {'opacity': 0}).then(function() { UIkit.util.remove(element) });
+UIkit.util.transition(element, {'opacity': 0}).then(function() { console.log('Transition finished!'); });
 ```
 
 **Result**
-```html
-<!-- The element fades out and then is being removed from the DOM -->
+```log
+Transition finished!
 ```
 ---
 
 
 
 ### `Transition { start() -> transition(), stop(element), cancel(element), inProgress(element) }`
-> **Description:** With the Transition object you have four handy functions available.
-`start()`:      Is a alias for the above mentioned `transition()` function
-`stop()`:       Stops the transition
-`cancel()`:     Cancels the transition
-`inProgress()`: Either return true or false, whether the transition is in progress or not
+> **Description:** With the Transition object you have four handy functions available.  
+`start()`:      Is an alias for the above mentioned `transition()` function  
+`stop()`:       Stops the transition  
+`cancel()`:     Cancels the transition  
+`inProgress()`: Either returns true or false, whether the transition is in progress or not
 
 **HTML**
 ```html
@@ -103,11 +101,11 @@ UIkit.util.transition(element, {'opacity': 0}).then(function() { UIkit.util.remo
 
 **Javascript**
 ```javascript
-var element = document.getElementById('page-loader');
+var element = document.getElementById('sample');
 var Transition = UIkit.util.Transition;
 
 // Start the transition
-Transition.start(element, {'transform': 'translate(200, 50)'}, 500, 'ease');
+Transition.start(element, {'background': '#000', 'color': '#fff'}, 500, 'ease');
 
 // Stop the transition
 Transition.stop(element);
